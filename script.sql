@@ -16,6 +16,5 @@ CREATE TABLE videojuegos (
     FOREIGN KEY (id_categoria) REFERENCES categorias(id_categoria)
 );
 
--- Datos iniciales para pruebas
 INSERT INTO categorias (nombre) VALUES ('Acción'), ('RPG'), ('Aventura');
 INSERT INTO videojuegos (titulo, precio, id_categoria) VALUES ('Elden Ring', 59.99, 2), ('God of War', 39.99, 1);
